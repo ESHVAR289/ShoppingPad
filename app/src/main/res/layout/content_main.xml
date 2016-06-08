@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context="com.shoppingpad.MainActivity">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <LinearLayout
+           android:layout_alignParentBottom="true"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+           <Button
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:id="@+id/btn_login"
+               android:layout_weight="1"
+               android:text="@string/txt_login"
+               android:onClick="onClickLoginBtn"/>
+           <Button
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:id="@+id/btn_signup"
+               android:layout_weight="1"
+               android:text="@string/txt_signup"
+               android:onClick="onClickSignUpBtn"/>
+       </LinearLayout>
+   </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

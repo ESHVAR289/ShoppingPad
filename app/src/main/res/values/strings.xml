@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">ShoppingPad</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="hint_password">Password</string>
+    <string name="dont_have_account">No account yet? Create one</string>
+    <string name="button_lable">Login</string>
+    <string name="hint_3_d_secure_pin">Enter 3-D secure pin</string>
+    <string name="already_member">Already a member? Login</string>
+    <string name="btn_signup">Create Account</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Enter email address</string>
+    <string name="hint_mobile_no">Enter registered mobile no.</string>
+    <string name="wlcome_msg">Welcome to shoppingPad</string>
+    <string name="img_mobile_dec">Edit text icon mobile</string>
+    <string name="img_secure_pass">Image icon for 3-d secure pin</string>
+    <string name="txt_login">Login</string>
+    <string name="txt_signup">SignUp</string>
+    <string name="txt_otp_sent">We have sent an OTP on your registered mobile no.</string>
+</resources>

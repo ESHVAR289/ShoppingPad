@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.shoppingpad.LoginActivity"
+    tools:showIn="@layout/activity_login">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txt_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/wlcome_msg"
+            android:gravity="center"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/welcome_msg_size"
+            android:textStyle="bold"
+            android:layout_marginTop="23dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="33dp"
+            android:layout_marginLeft="33dp"
+            android:text="@string/txt_otp_sent"
+            android:layout_below="@+id/txt_welcome"
+            android:gravity="center_horizontal"
+            android:textSize="15sp" />
+        <ImageView
+            android:contentDescription="@string/img_mobile_dec"
+            android:layout_marginTop="111dp"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/img_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_welcome"
+            android:src="@mipmap/ic_smartphone_black" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="111dp"
+            android:id="@+id/inputlayout_mobile"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/img_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_mobile"
+            android:layout_below="@+id/txt_welcome">
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_marginEnd="10dp"
+                android:layout_width="329dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:hint="@string/hint_mobile_no" />
+        </android.support.design.widget.TextInputLayout>
+        <ImageView
+            android:contentDescription="@string/img_secure_pass"
+            android:layout_marginTop="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/img_secure_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_mobile"
+            android:src="@mipmap/ic_lock_black" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="48dp"
+            android:id="@+id/inputlayout_secure_pass"
+            android:layout_toEndOf="@+id/img_secure_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_secure_pass"
+            android:layout_below="@+id/img_mobile">
+            <EditText
+                android:id="@+id/input_secure_pass"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:hint="@string/hint_3_d_secure_pin" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_login"
+            android:text="@string/txt_login"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
+<!--
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:paddingTop="56dp"
+android:paddingLeft="24dp"
+android:paddingRight="24dp"
+android:orientation="vertical">
+
+&lt;!&ndash; Email Label &ndash;&gt;
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+    <EditText android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="@string/hint_mobile_no" />
+</android.support.design.widget.TextInputLayout>
+
+&lt;!&ndash; Password Label &ndash;&gt;
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp">
+    <EditText android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/hint_3_d_secure_pin"/>
+</android.support.design.widget.TextInputLayout>
+
+<android.support.v7.widget.AppCompatButton
+    android:id="@+id/btn_login"
+    android:layout_width="368dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:layout_marginBottom="24dp"
+    android:padding="12dp"
+    android:text="@string/button_lable" />
+
+</LinearLayout>-->
